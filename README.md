@@ -69,7 +69,7 @@
 |------|------|
 | AI 模型 | [AIHubMix](https://aihubmix.com/?aff=CfMq)、Gemini、OpenAI 兼容、DeepSeek、通义千问、Claude、Ollama 本地模型 等（统一模型接入，支持多 Key 负载均衡与多渠道切换）|
 | 行情数据 | AkShare、Tushare、Pytdx、Baostock、YFinance |
-| 新闻搜索 | Tavily、SerpAPI、Bocha、Brave、MiniMax |
+| 新闻搜索 | Anspire、Tavily、SerpAPI、Bocha、Brave、MiniMax |
 | 社交舆情 | [Stock Sentiment API](https://api.adanos.org/docs)（Reddit / X / Polymarket，仅美股，可选） |
 
 > 注：美股历史数据与实时行情统一使用 YFinance，确保复权一致性
@@ -177,8 +177,8 @@
 | Secret 名称 | 说明 | 必填 |
 |------------|------|:----:|
 | `STOCK_LIST` | 自选股代码，如 `600519,hk00700,AAPL,TSLA` | ✅ |
-| `ANSPIRE_API_KEYS` | [Anspire Search](https://aisearch.anspire.cn/) Web Search API（实时智能搜索，优先使用，多个 key 用逗号分隔） | 推荐 |
 | `TAVILY_API_KEYS` | [Tavily](https://tavily.com/) 搜索 API（新闻搜索） | 推荐 |
+| `ANSPIRE_API_KEYS` | [Anspire AI Search](https://aisearch.anspire.cn/) 针对中文内容特别优化 (可有效增强A股分析效果) | 可选 |
 | `MINIMAX_API_KEYS` | [MiniMax](https://platform.minimaxi.com/) Coding Plan Web Search（结构化搜索结果） | 可选 |
 | `SERPAPI_API_KEYS` | [SerpAPI](https://serpapi.com/baidu-search-api?utm_source=github_daily_stock_analysis) 全渠道搜索 | 可选 |
 | `BOCHA_API_KEYS` | [博查搜索](https://open.bocha.cn/) Web Search API（中文搜索优化，支持AI摘要，多个key用逗号分隔） | 可选 |

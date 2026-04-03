@@ -1192,7 +1192,7 @@ class AnspireSearchProvider(BaseSearchProvider):
                     snippet=snippet,
                     url=item.get('url', ''),
                     source=self._extract_domain(item.get('url', '')),
-                    published_date=item.get('date') or item.get('content') 
+                    published_date=item.get('date', '')
                 ))
             
             logger.info(f"[Anspire] 成功解析 {len(results)} 条结果")
